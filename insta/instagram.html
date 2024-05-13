@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #full{
+            display: flex;
+            display: inline-block;
+        }
+        #gif{          
+            width: 400px;
+            display: flex;
+            display: inline-block;
+
+            img{
+                margin-top: 18px;
+                height: 610px ;
+                width: 400px;
+                padding-left: 350px;
+            }
+        }
+        #main{
+            border: 2px solid rgba(0, 0, 0, 0.141);
+            margin-top: 25px;
+            display: flex;
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            left: 780px;
+            width: 350px;
+            #name{
+                padding: 58px;
+                margin-left: 20px;
+                position: absolute;
+                top: 0px;
+                left: 10px;
+            }
+            input{
+                width: 80%;
+                padding: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.141);
+                margin-left: 37px;
+                font-size: small;
+                width: 250px;
+                border-radius: 5px;
+                background-color: rgba(226, 204, 196, 0.099);
+            }
+            #login{
+                width: 80%;
+                border-radius: 10px;
+                background-color: rgba(0, 98, 255, 0.621);
+                border: 0px solid black;
+                color: white;
+                height:35px;
+                font-size: 15px;
+                
+            }
+        }
+        .facebook{
+            text-align: center;
+            p{
+                text-decoration: none;
+                color:#373b8c;
+                font-family: sans-serif;
+                font-size: small;
+                margin-left: 20px;
+            }
+        }
+            .logo{
+                position: absolute;
+                top: 350px;
+                left: 88px;
+                font-size: 20px;
+            }
+            #main.a{
+                text-decoration: none;
+            }
+            #top{
+                margin-top: 150px;
+            }
+            #mid{
+                margin-top: 3px;
+            }
+            #bottom{
+                margin-top: 20px;
+            }
+            #new{
+                border: 2px solid rgba(0, 0, 0, 0.141);
+                position: absolute;
+                top: 480px;
+                left: 780px;
+                width: 331px;
+                padding: 10px;
+                text-align: center;
+                p{
+                    color: rgba(0, 98, 255, 0.621) ;
+                    font-size: small;
+                    font-weight: bold;
+                }
+            }
+            #Get{
+                position: absolute;
+                top: 550px;
+                left: 925px;
+                p{
+                    font-size: small;
+                }
+            }
+            #playstore{
+                position: absolute;
+                top: 593px;
+                left: 820px;
+                img{
+                    height: 40px;
+                    width: 140px;
+                    border-radius: 5px;
+                }
+            }
+            #microsoft{
+                position: absolute;
+                top: 593px;
+                left: 975px;
+                img{
+                    height: 40px;
+                    width: 120px;
+                }
+            }
+            #last{
+                display: flex;
+                align-items: center;
+                margin-left: 330px;
+                margin-top: 25px;
+                a{
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 7px;
+                    font-size:12px;
+                    color: rgba(0, 0, 0, 0.445);
+                }
+            }
+            #last>p{
+                display: inline-block;
+            }
+            #select{
+                display: flex;
+                justify-content: center;
+                font-size:12px;
+                
+                color: rgba(0, 0, 0, 0.445);
+                select{
+                    border: 0px solid black;
+                    font-size:12px;
+                    color: rgba(0, 0, 0, 0.445);
+                }
+                p{
+                    margin-left: 10px;
+                }
+            }
+            .links:hover{
+                    text-decoration: underline rgb(4, 4, 62);
+                }
+    </style>
+</head>
+<body>  
+        <div id="gif">
+            <img src="./instagif.gif">
+        </div>
+        <div id="full">
+        <div id="main">
+            <div id="name"><img src="./Insta name.png" height="50px"></div>
+            <div id="top"><input type="text" placeholder="Phone number, username, email address"></div>
+            <div id="mid"><input type="text" placeholder="Password"></div><br>
+            <div><input type="button" value="Log in" id="login"></div><br>
+            <div><img src="./or.png"></div><br>
+            <a href="https://facebook.com" style="text-decoration: none; font-weight:bold;">
+                <div class="facebook">
+                <i class="fa-brands fa-square-facebook logo" style="color: #373b8c;"></i>
+                <p>Log in with Facebook</p></div></a>
+            <div id="bottom" style="text-align: center; font-size: small; "><a href="" style="text-decoration: none; color:#262963;"><p class="links" >Forgotten your password?</p></a></div>
+        </div>
+        <div id="new">
+            <p>Create new account</p>
+        </div>
+        <div id="Get"><p>Get the app.</p></div>
+    </div>
+    <div>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D0A35C1A6-C30C-44DC-98CB-60A8F17052C7%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps%3A%2F%2Fwww.instagram.com%2F"><div id="playstore"><img src="./playstore.png" alt=""></div></a>
+        <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C1920%2C1020"><div id="microsoft"><img src="./microsoft.png" alt=""></div></a>
+    </div>
+    <div id="last">
+        <a href="" ><p class="links">Meta</p></a>
+        <a href="" ><p class="links">About</p></a>
+        <a href="" ><p class="links">Blog</p></a>
+        <a href="" ><p>Jobs</p></a>
+        <a href="" ><p class="links">Help</p></a>
+        <a href="" ><p class="links">API</p></a>
+        <a href="" ><p>Privacy</p></a>
+        <a href="" ><p>Terms</p></a>
+        <a href="" ><p class="links">Locations</p></a>
+        <a href="" ><p>Instagram Lite</p></a>
+        <a href="" ><p class="links">Threads</p></a>
+        <a href="" ><p>Contact uploading and non-users</p></a>
+        <a href="" ><p class="links">Meta verified</p></a>
+        
+    </div>
+
+    <div id="select">
+        <select name="" id="lan">
+            <option value="">English (UK)</option>
+            <option value="">French</option>
+            <option value="">English</option>
+            <option value="">Deutsch</option>
+            <option value="">Hindi</option>
+            <option value="">Tamil</option>
+            <option value="">Japanese</option>
+            
+        </select>
+        <p>© 2024 Instagram from Meta</p>
+    </div>
+</body>
+</html>
